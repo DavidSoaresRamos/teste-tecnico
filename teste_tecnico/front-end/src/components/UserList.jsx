@@ -10,8 +10,8 @@ const UserList = () => {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
-  const [search, setSearch] = useState(""); 
-  const [currentPage, setCurrentPage] = useState(1); 
+  const [search, setSearch] = useState("");
+  const [currentPage, setCurrentPage] = useState(1);
   const usersPerPage = 5;
 
   useEffect(() => {
@@ -67,10 +67,12 @@ const UserList = () => {
         type="text"
         placeholder="Filtrar por nome..."
         value={search}
-        onChange={(e) => setSearch(e.target.value)}
+        onChange={(e) => {
+          setSearch(e.target.value);
+          setCurrentPage(1); 
+        }}
         className="search-input"
       />
-
       <table className="userlist-table">
         <thead>
           <tr>
