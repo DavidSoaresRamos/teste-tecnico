@@ -1,0 +1,92 @@
+.userlist-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+  
+}
+
+h1 {
+  margin-bottom: 5px;
+  font-size: 28px;
+  color: #222;
+}
+
+h2 {
+  margin-bottom: 20px;
+  font-size: 20px;
+  color: #333;
+}
+
+
+.search-input {
+  padding: 8px 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  width: 280px;
+  outline: none;
+  transition: border 0.3s;
+}
+
+.search-input:focus {
+  border-color: #7b42f6;
+}
+
+
+.userlist-table {
+  border-collapse: collapse;
+  width: 80%;
+  max-width: 800px;
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.userlist-table th,
+.userlist-table td {
+  padding: 12px 16px;
+  text-align: left;
+}
+
+.userlist-table thead {
+  background: #7b42f6;
+  color: white;
+}
+
+.userlist-table tbody tr:nth-child(even) {
+  background: #f4f4f9;
+}
+
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+  gap: 10px;
+}
+
+.pagination button {
+  padding: 6px 14px;
+  border: none;
+  border-radius: 6px;
+  background: linear-gradient(135deg, #7b42f6, #3f9fff);
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.2s, background 0.3s;
+}
+
+.pagination button:hover {
+  transform: scale(1.05);
+  background: linear-gradient(135deg, #6932e0, #2d89e5);
+}
+
+.pagination button:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}

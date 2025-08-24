@@ -1,0 +1,39 @@
+# Dependências
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Build do frontend e backend
+dist/
+build/
+
+# Arquivos do ambiente
+.env
+.env.local
+.env.*.local
+
+# Logs
+logs
+*.log
+logs/*
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Cache
+.cache/
+.vscode/
+.DS_Store
+*.swp
+*.swo
+
+# Banco de dados 
+*.sqlite
+*.sqlite-journal
+*.sql
+
+# Sistema operacional
+Thumbs.db
+desktop.ini
